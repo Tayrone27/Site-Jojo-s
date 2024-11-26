@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curiosidades Incríveis Sobre Jojo's</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section id="curiosities">
+    <h2>Curiosidades Incríveis Sobre Jojo's</h2>
+    <div class="curiosity-cards">
+      <div class="curiosity-card">
+        <img src="./Criador de Jojo.jpg" alt="Criador de Jojo's" class="curiosity-image">
+        <h3>Hirohiko Araki</h3>
+        <p>Hirohiko Araki (em japonês: 荒木 飛呂彦; hepburn: Araki Hirohiko; Sendai, 7 de junho de 1960) é um artista de mangá japonês conhecido por sua série JoJo's Bizarre Adventure, publicada pela primeira vez na revista Weekly Shōnen Jump em 1987, que até hoje já vendeu mais de 100 milhões de cópias só no Japão e que também é conhecida por suas frequentes referências ao rock ocidental e à Itália, ambos dos quais Araki supostamente gosta muito.</p>
+        <button class="toggle-details">Ver mais</button>
+        <div class="additional-details">
+          <p>Autor da Obra</p>
+        </div>
+      </div>
+
+      <div class="curiosity-card">
+        <img src="./Dio brando123.png" alt="Dio Brando origem" class="curiosity-image">
+        <h3>Origem de Dio Brando</h3>
+        <p>O vilão mais amado e popular da história do mangá Dio Brando, referencia diretamente a Ronnie James Dio, nome artístico de Ronald James Padavona (1942-2010), músico, produtor e compositor de heavy metal. Considerado um dos melhores vocalistas de todos os tempos, com um enorme talento, com técnicas vocais dificílimas e voz marcante, servindo como influência para os melhores vocalistas da atualidade. É lembrado também como o criador da "mão chifrada", o símbolo do rock que representa dois chifres.</p>
+        <button class="toggle-details">Ver mais</button>
+        <div class="additional-details">
+          <p>Dio Brando Origem</p>
+        </div>
+      </div>
+
+      <div class="curiosity-card">
+        <img src="./jojo99.jpg" alt="canal especializado" class="curiosity-image">
+        <h3>Canal Jojo99</h3>
+        <p>Jojo99 é um canal do youtube especializado em analizar episódios de todas as temporadas de Jojo's Bizarre Adventure. Com analises específicas de todos os personagens.</p>
+        <a href="https://www.youtube.com/@CANALJOJO99"><button class="toggle-details">Ver mais</button> </a>
+        <div class="additional-details">
+          <p>Essa temperatura extrema foi registrada em 1983 e é mais fria do que qualquer coisa que a maioria de nós jamais experimentará!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f4f7;
+      color: #333;
+    }
+
+    
+    body {
+      background-image: url(./fotode\ fundo\ curiosidades.webp); 
+      background-size: cover;
+      background-position: center;
+    }
+
+    #curiosities {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: rgba(94, 108, 156, 0.8); 
+      color: white;
+      border-radius: 10px;
+    }
+
+    #curiosities h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .curiosity-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .curiosity-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .curiosity-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .curiosity-card h3 {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .curiosity-card p {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .curiosity-card button {
+      padding: 10px 15px;
+      background-color: #ff9800;
+      color: #fff;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .curiosity-card button:hover {
+      background-color: #e68900;
+    }
+
+    .additional-details {
+      display: none;
+      padding-top: 10px;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .curiosity-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+  </style>
+</body>
+</html>

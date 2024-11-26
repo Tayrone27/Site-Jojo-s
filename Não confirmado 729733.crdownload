@@ -1,0 +1,44 @@
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+const toggleButton = document.getElementById('theme-toggle');
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+fetch('https://api.jikan.moe/v4/anime/1315')  // ID do anime
+  .then(response => response.json())
+  .then(data => {
+    console.log(data.data);
+  })
+  .catch(error => console.error('Erro ao buscar dados:', error));
+
+    // Função para rolar para a esquerda
+    function scrollLeft() {
+        const container = document.getElementById('imagem-container');
+        container.scrollBy({
+          left: -300,  // Movimenta 300px para a esquerda
+          behavior: 'smooth'  // Rolagem suave
+        });
+      }
+  
+      // Função para rolar para a direita
+      function scrollRight() {
+        const container = document.getElementById('imagem-container');
+        container.scrollBy({
+          left: 300,  // Movimenta 300px para a direita
+          behavior: 'smooth'  // Rolagem suave
+        });
+    }
+    document.querySelectorAll('.toggle-details').forEach(button => {
+        button.addEventListener('click', function() {
+          const details = button.nextElementSibling;  // Pega o próximo elemento, que é a div .additional-details
+          details.classList.toggle('show-details');  // Alterna a visibilidade dos detalhes
+        });
+      });
+      

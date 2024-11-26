@@ -1,0 +1,106 @@
+<section id="episodes">
+    <h2>Episódios Favoritos</h2>
+    <div class="episodes-list">
+      <div class="episode">
+        <h3>Stardust Crusaders;
+             Ep. 1 - O Homem Possuído por um Espírito Maligno</h3>
+       <a href="https://www.youtube.com/watch?v=eROIzRN_Qi8"><img src="./jojospart3sc.webp" alt="Episódio 1">
+       </a>
+        <p>O começo da jornada de Jotaro e seus amigos.</p>
+        <button class="open-trailer"  data-video="https://www.youtube.com/watch?v=eROIzRN_Qi8">Assistir Trailer</button>
+      </div>
+  
+      <div class="episode">
+        <h3>Golden Wind; 
+            Ep. 25 - Spice Girls</h3>
+        <a href="https://www.youtube.com/watch?v=E8WehfOlYlY"><img src="./golden wind.jpg" alt="Episódio 25">
+        </a>
+        <p>Uma batalha épica contra um dos maiores inimigos.</p>
+        <button class="open-trailer" data-video="https://www.youtube.com/watch?v=E8WehfOlYlY">Assistir Trailer</button>
+      </div>
+  
+      <div class="episode">
+        <h3>Stardust Crusaders;
+            Ep. 48: The Last Stand</h3>
+        <a href="https://www.youtube.com/watch?v=ywnlPd4KaYw"><img src="./Dio no fundo.jpg" alt="Episódio 48">
+        </a>
+        <p>A luta final que define o destino de todos os personagens.</p>
+        <button class="open-trailer" data-video="https://www.youtube.com/watch?v=ywnlPd4KaYw">Assistir Trailer</button>
+      </div>
+    </div>
+  </section>
+<style>
+    #episodes {
+  background-image:url(./dio\ olhar.webp); /* Substitua 'background.jpg' pelo caminho da sua imagem de fundo */
+  background-size: cover;  /* Faz a imagem cobrir toda a área do fundo */
+  background-position: center; /* Alinha a imagem ao centro */
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-attachment: fixed; /* A imagem ficará fixa quando a página for rolada */
+}
+
+#episodes h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  color: #fff;  /* Alterado para branco, para contrastar melhor com o fundo */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.episodes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.episode {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparência no fundo dos episódios para não perder o contraste */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.episode:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.episode img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.episode h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.episode p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.open-trailer {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.open-trailer:hover {
+  background-color: #00408d;
+}
+
+</style>  
